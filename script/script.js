@@ -8,5 +8,4 @@ const
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     body.classList.toggle('show');
-    menu.classList.toggle('vis');
 });

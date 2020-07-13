@@ -134,7 +134,8 @@ nav {
 }
 
 .show {
-    transform: translateX(-350px);
+    transform: translateY(350px);
+    width: 100vw;
 }
 
 .use:before {
@@ -206,11 +207,7 @@ nav {
 }
 
 .active {
-    transform: translateX(350px);
-}
-
-.active span {
-    background-color: #fff;
+    transform: translateY(-350px);
 }
 
 .active span:nth-child(1) {
@@ -520,10 +517,6 @@ footer a {
     left: 0;
 }
 
-.vis {
-    display: flex !important;
-}
-
 @media only screen and (min-width: 1600px) {
     .portfolio-except {
         font-size: 1rem;
@@ -617,11 +610,10 @@ footer a {
     }
 
     .menu {
-        background-color: var(--color-primary);
         position: absolute;
-        top: 0;
-        right: -355px;
-        width: 350px;
+        left: 0;
+        top: -350px;
+        width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         font-size: 1.3em;
@@ -629,15 +621,13 @@ footer a {
         transition: 0.5s ease-in-out;
         box-sizing: border-box;
         z-index: 888888;
-        display: none;
     }
 
     .menu li {
-        margin-bottom: 1em;
+        margin: 0 0 1em 0;
     }
 
     .move {
-        color: #fff !important;
         letter-spacing: 0.06em;
         transition: 0.3s;
     }
