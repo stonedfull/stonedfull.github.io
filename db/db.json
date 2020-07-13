@@ -1,0 +1,22 @@
+[
+    {
+        "link": "witcher",
+        "name": "The Witcher",
+        "text": "The Witcher project is a good example of a sales landing page. There are smooth fade animations, which catches your aye. And also you can find here trailer for each series performed by a beautiful player. This work was created during a four-day intensive and served as a great leap in my knowledge of CSS animation."
+    },
+    {
+        "link": "alijspress",
+        "name": "AliJSpress",
+        "text": "AliJSpress creation also took place in the form of intensive. This work was a successful attempt to create a popular website \"AliExpress\" working Back-end exclusively on JS language. This work helped me gain a lot of knowledge in using JavaScript. Implemented basket, wish list, product rendering, sorting by category and product search."
+    },
+    {
+        "link": "foxtrade",
+        "name": "FoxTrade",
+        "text": "A trading company asked me to popularize while I was practicing there. Together we developed a website Click-through Landing page layout design. And later I created a site for this layout. Now this project is an influx of a large number of customers in this company, which fully met the expectations of the customer. Also now it’s easier for customers to get to know the company."
+    },
+    {
+        "link": "school",
+        "name": "School #15",
+        "text": "The project to create a school information portal was one of my first works. It was the work on this site that showed me how I can create something new. And I can see the result of my work instantly after its completion."
+    }
+]
