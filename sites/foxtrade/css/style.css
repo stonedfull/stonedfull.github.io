@@ -426,6 +426,7 @@ input {
     .advantage {
         grid-template-areas: "f" "s" "t";
         grid-template-columns: 1fr;
+        margin-bottom: 2em;
     }
 }
 
@@ -435,6 +436,9 @@ input {
     }
     main {
         grid-template-columns: 1fr;
+    }
+    header {
+        z-index: 1;
     }
     header ul {
         grid-template-areas: "logo";
@@ -450,8 +454,8 @@ input {
         width: 25px;
         height: 9px;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 33px;
+        right: 33px;
     }
     .burger span::before {
         content: "";
@@ -459,11 +463,43 @@ input {
         width: 25px;
         height: 2px;
         position: absolute;
+        transition: 0.5s;
     }
-    .burger span:nth-child(2)::before {
+    .burger span:nth-child(2):before {
         top: 9px;
     }
-    #toTopx {
+    .active {
+        transform: translateX(5px);
+    }
+    .active span:nth-child(1):before {
+        transform: rotate(45deg) translateY(7px);
+    }
+    .active span:nth-child(2):before {
+        transform: rotate(-45deg) translateY(-7px);
+    }
+    nav {
+        position: absolute;
+        overflow: hidden;
+        opacity: 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-bottom: 5px;
+    }
+    nav ul li:nth-child(5) {
+        margin: 0;
+    }
+    nav i {
         display: none !important;
+    }
+    .show {
+        position: inherit;
+        opacity: 1;
+    }
+    .record {
+        display: none;
     }
 }

@@ -23,54 +23,96 @@
 
         <link rel="stylesheet" href="css/min.css" />
         <link rel="stylesheet" href="css/style.css" />
+
+        <style>
+            @media only screen and (max-width: 800px) {
+                main {
+                    display: block;
+                }
+                .sub {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 100px 0;
+                }
+                .sub div {
+                    width: 100%;
+                }
+                .sub input,
+                .sub textarea {
+                    width: 100% !important;
+                    margin: 0 0 0.7em !important;
+                    box-sizing: border-box;
+                    position: inherit;
+                }
+                .sub textarea {
+                    height: 130px;
+                }
+            }
+        </style>
     </head>
 
     <body>
-        <header>
-            <ul>
-                <li style="font-size: 35px; position: relative; top: -15px;">
-                    <a href="index.html">
-                        <span style="color: #ccc;">#</span>
-                        <span style="color: var(--orange);">Fox</span>
-                        <span style="color: var(--green);">Trade</span>
-                    </a>
-                </li>
-                <li></li>
-                <li><i class="fa fa-clock"></i> 9:00 - 21:00</li>
-                <li><i class="fa fa-phone"></i> +(373) 78 203 654</li>
-                <li><i class="fa fa-envelope"></i> Mail: info@mail.ru</li>
-            </ul>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">главная</a></li>
-                <li><a href="services.html">услуги</a></li>
-                <li><a href="instagram.html">Instagram</a></li>
-                <li><a href="contacts.html">контакты</a></li>
-                <li>
-                    <a href="online.html" id="active"><i class="fa fa-bolt"></i> запись on-line</a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <form class="sub">
-                <div class="left">
-                    <input type="text" placeholder="Имя" pattern="2-[0-9]{3}-[0-9]{3}" />
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Тема" class="r" />
+        <div class="mega-container">
+            <header>
+                <ul>
+                    <li class="li-logo" style="font-size: 35px;">
+                        <a href="index.html">
+                            <span style="color: #ccc;">#</span>
+                            <span style="color: var(--orange);">Fox</span>
+                            <span style="color: var(--green);">Trade</span>
+                        </a>
+                    </li>
+                    <li></li>
+                    <li><i class="fa fa-clock"></i> 9:00 - 21:00</li>
+                    <li><i class="fa fa-phone"></i> +(373) 78 203 654</li>
+                    <li><i class="fa fa-envelope"></i> Mail: info@mail.ru</li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="right">
-                    <textarea type="text" placeholder="Сообщение"></textarea>
-                </div>
-                <input type="submit" value="Отправить" id="input-submit" />
-            </form>
-        </main>
-        <footer>
-            <div class="about-left"><b>Email: </b>vityablokhin@gmail.com<br /><b>Phone: </b>+(373)78203654</div>
-            <div class="about-right">CopyRight Stoned Developer<br />© All rights reserved</div>
-        </footer>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">главная</a></li>
+                    <li><a href="services.html">услуги</a></li>
+                    <li><a href="instagram.html">Instagram</a></li>
+                    <li><a href="contacts.html">контакты</a></li>
+                    <li>
+                        <a href="online.html" id="active"><i class="fa fa-bolt"></i> запись on-line</a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <form class="sub">
+                    <div class="left">
+                        <input type="text" placeholder="Имя" pattern="2-[0-9]{3}-[0-9]{3}" />
+                        <input type="text" placeholder="Email" />
+                        <input type="text" placeholder="Тема" class="r" />
+                    </div>
+                    <div class="right">
+                        <textarea type="text" placeholder="Сообщение"></textarea>
+                    </div>
+                    <input type="submit" value="Отправить" id="input-submit" />
+                </form>
+            </main>
+            <footer>
+                <div class="about-left"><b>Email: </b>vityablokhin@gmail.com<br /><b>Phone: </b>+(373)78203654</div>
+                <div class="about-right">CopyRight Stoned Developer<br />© All rights reserved</div>
+            </footer>
+        </div>
         <script src="libs/jquery/jquery-3.3.1.js"></script>
 
         <script src="js/common.js"></script>
+        <script>
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector("nav");
+
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("active");
+                nav.classList.toggle("show");
+            });
+        </script>
     </body>
 </html>
