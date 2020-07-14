@@ -135,7 +135,6 @@ nav {
 
 .show {
     transform: translateY(350px);
-    width: 100vw;
 }
 
 .use:before {
@@ -561,6 +560,9 @@ footer a {
         grid-gap: 2em;
         text-align: center;
     }
+    .footer-bio-desc {
+        text-align: left;
+    }
     .contain-about {
         max-width: 700px;
     }
@@ -635,10 +637,6 @@ footer a {
     .move:before {
         height: 0.1em;
     }
-
-    .move:hover {
-        color: #d8d8d8 !important;
-    }
 }
 @media only screen and (max-width: 580px) {
     .portfolio-item {
@@ -654,6 +652,9 @@ footer a {
     }
     .footer-bio {
         grid-template-columns: 1fr;
+    }
+    .footer-bio-desc {
+        text-align: center;
     }
 }
 @media only screen and (max-width: 480px) {
