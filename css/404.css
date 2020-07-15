@@ -100,3 +100,51 @@
         background-position: -94px 0;
     }
 }
+
+@media only screen and (max-width: 520px) {
+    .plane {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sky h2 {
+        font-size: 14em;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .sky {
+        height: 70vh;
+    }
+
+    .field {
+        height: 30vh;
+        padding: 50px;
+    }
+
+    .plane {
+        width: 200px;
+    }
+
+    .sky h2 {
+        font-size: 10em;
+    }
+
+    .field h2 {
+        font-size: 1.5em;
+    }
+
+    .field a {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .plane {
+        width: 150px;
+    }
+
+    .sky h2 {
+        font-size: 8em;
+    }
+}
