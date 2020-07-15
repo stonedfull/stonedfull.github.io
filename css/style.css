@@ -612,8 +612,8 @@ tbody tr:hover {
     }
 }
 @media only screen and (max-width: 1200px) {
-    .know-box {
-        flex-direction: column;
+    td span {
+        display: none;
     }
     .portfolio-item {
         grid-template-areas: "info preview-small";
