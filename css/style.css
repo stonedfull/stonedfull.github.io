@@ -530,7 +530,7 @@ footer a {
     font-family: var(--font-subtitle);
 }
 
-.skills-box h4 {
+h4 {
     margin-bottom: 0.6em;
     line-height: 1.2;
     font-size: 0.85em;
@@ -561,6 +561,38 @@ footer a {
     margin-bottom: 0.725rem;
 }
 
+table {
+    background-color: #f9f9f9;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 2em;
+}
+
+td {
+    padding: 0.5em;
+    font-size: 0.9em;
+    align-items: center;
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:nth-child(1) {
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+tr:hover {
+    background-color: #e4e4e4;
+}
+
+tr:nth-child(1):hover {
+    background-color: var(--color-primary);
+}
+
 @media only screen and (min-width: 1600px) {
     .portfolio-except {
         font-size: 1rem;
@@ -579,6 +611,9 @@ footer a {
     }
 }
 @media only screen and (max-width: 1200px) {
+    .know-box {
+        flex-direction: column;
+    }
     .portfolio-item {
         grid-template-areas: "info preview-small";
         grid-template-columns: 1fr 1fr;
