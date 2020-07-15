@@ -578,19 +578,20 @@ tr {
     transition: 0.3s;
 }
 
-tr:nth-child(1) {
+.lang td {
+    width: 50%;
+    text-align: center;
+}
+
+thead {
     background-color: var(--color-primary);
     color: #fff;
     font-size: 0.85em;
     font-weight: 700;
 }
 
-tr:hover {
+tbody tr:hover {
     background-color: #e4e4e4;
-}
-
-tr:nth-child(1):hover {
-    background-color: var(--color-primary);
 }
 
 @media only screen and (min-width: 1600px) {
