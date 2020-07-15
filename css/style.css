@@ -509,11 +509,56 @@ footer a {
     width: 120px;
     position: relative;
 }
+
 .footer-bio-img img {
     width: 100%;
     position: absolute;
     top: 5%;
     left: 0;
+}
+
+.skills-box-container {
+    float: right;
+    margin: 0 0 2em 1em;
+    max-width: 300px;
+}
+
+.skills-box {
+    background-color: #f9f9f9;
+    padding: 1.5em 1.25em;
+    font-size: 0.9375em;
+    font-family: var(--font-subtitle);
+}
+
+.skills-box h4 {
+    margin-bottom: 0.6em;
+    line-height: 1.2;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+.skills-box span {
+    width: 30px;
+    margin-right: 0.8em;
+}
+
+.skill-img {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.skill-img img {
+    height: 100%;
+}
+
+.skills-box li {
+    font-size: 0.9em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.725rem;
 }
 
 @media only screen and (min-width: 1600px) {
