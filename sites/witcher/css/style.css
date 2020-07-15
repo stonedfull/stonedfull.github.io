@@ -268,50 +268,41 @@ footer {
     .menu-button {
         display: block;
         position: absolute;
-        right: 35px;
-        top: 40px;
+        right: 25px;
+        top: 20px;
         width: 30px;
-        height: 2px;
-        background-color: #fff;
-        border: none;
-        transition: transform 0.2s;
+        height: 30px;
         cursor: pointer;
         z-index: 1000;
+        overflow: hidden;
+        padding: 10px;
     }
-    .menu-button:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
+    .menu-button span {
         width: 30px;
         height: 2px;
         background-color: #fff;
-        margin-top: -7px;
-        transition: transform 0.2s;
-    }
-    .menu-button:after {
-        content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color: #fff;
-        margin-top: 7px;
-        transition: transform 0.2s;
+        transition: 0.2s;
     }
-    .menu-button-active {
-        height: 0;
+    .menu-button span:nth-child(1) {
+        top: 16px;
     }
-    .menu-button-active:before {
-        transform: rotate(45deg);
-        margin-top: 0;
+    .menu-button span:nth-child(2) {
+        top: 24px;
     }
-    .menu-button-active:after {
-        transform: rotate(-45deg);
-        margin-top: 0;
+    .menu-button span:nth-child(3) {
+        top: 32px;
+    }
+    .menu-button-active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+    }
+    .menu-button-active span:nth-child(2) {
+        display: none;
+    }
+    .menu-button-active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
     }
     .header {
         display: none;

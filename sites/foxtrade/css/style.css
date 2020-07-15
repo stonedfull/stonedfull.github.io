@@ -419,24 +419,7 @@ input {
     }
 }
 
-@media only screen and (max-width: 1150px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-    .advantage {
-        grid-template-areas: "f" "s" "t";
-        grid-template-columns: 1fr;
-        margin-bottom: 2em;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-    main {
-        grid-template-columns: 1fr;
-    }
+@media only screen and (max-width: 1200px) {
     header {
         z-index: 1;
     }
@@ -450,37 +433,64 @@ input {
     .li-logo {
         display: block;
     }
-    .burger {
-        width: 25px;
-        height: 9px;
-        position: absolute;
-        top: 33px;
-        right: 33px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
     }
-    .burger span::before {
+    .advantage {
+        grid-template-areas: "f" "s" "t";
+        grid-template-columns: 1fr;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .burger {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .burger span {
         content: "";
         background: #fff;
-        width: 25px;
-        height: 2px;
+        width: 30px;
+        height: 2.2px;
         position: absolute;
-        transition: 0.5s;
+        transition: 0.3s;
     }
-    .burger span:nth-child(2):before {
-        top: 9px;
+    .burger span:nth-child(1) {
+        top: 16px;
     }
-    .active {
-        transform: translateX(5px);
+    .burger span:nth-child(2) {
+        top: 24px;
     }
-    .active span:nth-child(1):before {
-        transform: rotate(45deg) translateY(7px);
+    .burger span:nth-child(3) {
+        top: 32px;
     }
-    .active span:nth-child(2):before {
-        transform: rotate(-45deg) translateY(-7px);
+    .active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+    }
+    .active span:nth-child(2) {
+        width: 0;
+    }
+    .active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
     }
     nav {
         position: absolute;
         overflow: hidden;
         opacity: 0;
+        width: 100%;
+        top: 81px;
+        transition: 0.3s;
     }
     nav ul {
         display: flex;
@@ -496,8 +506,16 @@ input {
         display: none !important;
     }
     .show {
-        position: inherit;
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    main {
+        grid-template-columns: 1fr;
     }
     .record {
         display: none;
