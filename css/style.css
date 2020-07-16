@@ -522,15 +522,27 @@ footer a {
 
 .skills-box-container {
     float: right;
-    margin: 0 0 2em 1em;
+    margin: 0 0 1em 1.5em;
     max-width: 300px;
 }
 
 .skills-box {
     background-color: #f9f9f9;
-    padding: 1.5em 1.25em;
+    padding: 1.5em;
     font-size: 0.9375em;
     font-family: var(--font-subtitle);
+    margin-bottom: 5px;
+}
+
+.skills-box-container .small {
+    line-height: 1.7;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.skills-box-container .small a {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 h4 {
